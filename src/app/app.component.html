@@ -1,0 +1,6 @@
+<input type="text" [(ngModel)]="searchWord">
+
+<ul>
+  <li *ngFor="let item of listData | searchFilter:searchWord">{{ item }}</li>
+</ul>
+<router-outlet></router-outlet>
